@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyCB_iK9eNLAjYY9FCSoSEXOZXICWF2Jchk",
+              authDomain: "reasyme-82037.firebaseapp.com",
+              projectId: "reasyme-82037",
+              storageBucket: "reasyme-82037.appspot.com",
+              messagingSenderId: "267220482932",
+              appId: "1:267220482932:web:dba2c701ba417cd3928a21",
+              measurementId: "G-LBDWZP26RK"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
+
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <title>ReasyME - Build Resume Easily</title>
+    <body style="background-color: #c5a9a9;">
+        <div id="top">ReasyME</div>
+        <div id="border">
+            <div id="header">
+                <div class="container">
+                    <div class="part part1">
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+                        <label for="fileInput" id="imageLabel">Choose Image</label>
+                        <img id="previewImage" src="#" alt="Image preview" style="display: none;" />
+                    </div>
+                    <div class="part part2">
+                        <input placeholder="Sohan Karfa" style="margin-bottom: 10px; width: 100%; background-color:  rgb(61, 9, 73); color: rgb(207, 211, 191); border:none; text-align: center;  font-size:25px; font-weight: bold;">
+                        <input placeholder="Aspiring Software Developer" style="width: 100%; background-color:  rgb(61, 9, 73); color: rgb(207, 211, 191); border: none; text-align: center; font-size: small; font-weight: 500;">
+                    </div>
+                    <div class="part part2">
+                        <p style="display: inline-flex;  margin-bottom: 0px;">📞</p><input placeholder="+91-6295400770" style="background-color:  rgb(61, 9, 73); border:none; margin-bottom: 0px; margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px; width:80%">
+                        <p style="display: inline-flex;  margin-bottom: 0px;">📩</p><input placeholder="sohan100karfa@gmail.com" style="background-color:  rgb(61, 9, 73); border:none; margin-bottom: 0px;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px; width:80%">
+                        <p style="display: inline-flex;  margin-bottom: 0px;">🔗</p><input placeholder="linkedin/sohankarfa" style="background-color:  rgb(61, 9, 73); border:none;  margin-bottom: 0px;  margin-right: 3px; text-align: start; color:  rgb(233, 239, 240); font-weight: 100; margin-left: 5px;  width:80%">
+                        <p style="display: inline-flex;  margin-bottom: 0px;">🏠</p><input placeholder="Tarakeswar, West Bengal" style="background-color:  rgb(61, 9, 73); border:none;  margin-bottom: 0px;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px;  width:80%">
+                        <p style="display: inline-flex;">🧑‍💻</p><input placeholder="Sohan-2001" style="background-color:  rgb(61, 9, 73); border:none;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px;  width:80%">
+                    </div>
+                  </div>
+            <div id="below">
+                <div class="containerBody">
+                    <div class="partBody">
+                        <textarea placeholder="Highly passionate and versatile software developer with a strong foundation in designing and building responsive and user-friendly Windows and Android apps." style="height: 100px;"></textarea>
+                        <hr class="divider">
+                        <h2 class="inputLeft">Skills</h2>
+                        <textarea
+                        placeholder="
+◾Languages: C, CPP, Java, Python, HTML, CSS, JavaScript, Kotlin
+
+◾Frameworks: Bootstrap, Numpy, Pandas
+
+◾Database: Oracle, SQL
+
+◾Software: Android Studio, Visual Studio, VM Ware, XAMPP"
+                        style="height: 220px;"></textarea>
+                        <hr class="divider">
+                        <h2 class="inputLeft">Certifications</h2>
+                        <textarea placeholder="
+◾Software Development Trainee | Amcat | November'23
+                        
+◾Software Engineering IT Services | Amcat | November'23" style="height: 150px;"></textarea>
+                        <hr class="divider">
+                        <h2 class="inputLeft">Extra-Curricular Activities</h2>
+                        <textarea placeholder="Tree Plantation | Tarakeswar Green Mates NGO | July'22
+                        " style="height: 100px;"></textarea>
+                        
+                    </div>
+                    <div class="partBody1">
+                        <hr class="divider1">
+                    </div>
+
+                    <div class="partBody2">
+                        <h2 class="inputLeft">Projects</h2>
+                        <textarea placeholder="
+Bus Timer | Android Application | May'24
+◾Tech Stack: Kotlin, XML, Firebase
+◾Tools: Android Studio
+◾Description: It allows passengers to save bus timings globally so that others can search it.
+
+ Student Record Management System | Java Application | April'24
+◾Tech Stack: Java, MySql
+◾Tools: IntelliJ Idea, XAMPP
+◾Description: It provides the interface for CRU operations during admission and auto assigns registration number.
+
+Portfolio | Website | December'23
+◾Tech Stack: HTML, CSS, JavaScript, Bootstrap
+◾Tools: VS Code
+◾Description: It is my personal portfolio website.
+
+Basic Resume Maker | Windows Application | June'23
+◾Tech Stack: Python, Tkinter, FPDF
+◾Tools: Microsoft Visual Studio, Inno Setup
+◾Description: It saves the inputs as a single pdf file in A4 page orientation in a resume template.
+                        " style="height: 400px;"></textarea>
+                        <hr class="divider">
+                        <h2 class="inputLeft">Achievements</h2>
+                        <textarea placeholder="
+◾Winner | Always Executable Mini Hackathon | TechnOcean | April'23
+
+◾Winner | English Grammar Competition | LPU CPE | August'22
+
+◾Runner-Up Up | Story Hours | Magnitude | February'22
+                        " style="height: 100px;"></textarea>
+                        <hr class="divider">
+                        <h2 class="inputLeft">Education</h2>
+                        <textarea placeholder="
+◾B.Tech (CSE) | 2021-Present
+Lovely Professional University, Phagwara, India
+
+◾Higher Secondary (Pure Science) | 2019-2021
+Tarakeswar High School, Tarakeswar, India
+
+◾Secondary | 2018-2019
+Bikash Bharati Blooms Day School, Tarakeswar, India
+                        " style="height: 150px;"></textarea>
+                    </div>
+                  </div>
+            </div>              
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
