@@ -1,59 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-              apiKey: "AIzaSyCB_iK9eNLAjYY9FCSoSEXOZXICWF2Jchk",
-              authDomain: "reasyme-82037.firebaseapp.com",
-              projectId: "reasyme-82037",
-              storageBucket: "reasyme-82037.appspot.com",
-              messagingSenderId: "267220482932",
-              appId: "1:267220482932:web:dba2c701ba417cd3928a21",
-              measurementId: "G-LBDWZP26RK"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-        </script>
-
-
+        <title>ReasyMe</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <title>ReasyME - Build Resume Easily</title>
-    <body style="background-color: #c5a9a9;">
-        <div id="top">ReasyME</div>
-        <div id="border">
-            <div id="header">
-                <div class="container">
-                    <div class="part part1">
+    <body>
+        <div id="top">
+
+        </div>
+        <div id="middle">
+            <div id="Header">
+                <div id="containerHeader">
+                    <div id="HeaderPart1">
                         <input type="file" id="fileInput" accept="image/*" style="display: none;" />
                         <label for="fileInput" id="imageLabel">Choose Image</label>
                         <img id="previewImage" src="#" alt="Image preview" style="display: none;" />
                     </div>
-                    <div class="part part2">
-                        <input placeholder="Sohan Karfa" style="margin-bottom: 10px; width: 100%; background-color:  rgb(61, 9, 73); color: rgb(207, 211, 191); border:none; text-align: center;  font-size:25px; font-weight: bold;">
-                        <input placeholder="Aspiring Software Developer" style="width: 100%; background-color:  rgb(61, 9, 73); color: rgb(207, 211, 191); border: none; text-align: center; font-size: small; font-weight: 500;">
+                    <div id="HeaderPart2">
+                        <input placeholder="Sohan Karfa" style="margin-bottom: 10px; width: 100%; background-color: rgb(89, 0, 89); color: rgb(207, 211, 191); border:none; text-align: center;  font-size:25px; font-weight: bold;">
+                        <input placeholder="Aspiring Software Developer" style="width: 100%; background-color: rgb(89, 0, 89); color: rgb(207, 211, 191); border: none; text-align: center; font-size: small; font-weight: 500;">
+                  
                     </div>
-                    <div class="part part2">
-                        <p style="display: inline-flex;  margin-bottom: 0px;">📞</p><input placeholder="+91-6295400770" style="background-color:  rgb(61, 9, 73); border:none; margin-bottom: 0px; margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px; width:80%">
-                        <p style="display: inline-flex;  margin-bottom: 0px;">📩</p><input placeholder="sohan100karfa@gmail.com" style="background-color:  rgb(61, 9, 73); border:none; margin-bottom: 0px;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px; width:80%">
-                        <p style="display: inline-flex;  margin-bottom: 0px;">🔗</p><input placeholder="linkedin/sohankarfa" style="background-color:  rgb(61, 9, 73); border:none;  margin-bottom: 0px;  margin-right: 3px; text-align: start; color:  rgb(233, 239, 240); font-weight: 100; margin-left: 5px;  width:80%">
-                        <p style="display: inline-flex;  margin-bottom: 0px;">🏠</p><input placeholder="Tarakeswar, West Bengal" style="background-color:  rgb(61, 9, 73); border:none;  margin-bottom: 0px;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px;  width:80%">
-                        <p style="display: inline-flex;">🧑‍💻</p><input placeholder="Sohan-2001" style="background-color:  rgb(61, 9, 73); border:none;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 5px;  width:80%">
+                    <div id="HeaderPart2">
+                        <input placeholder="+91-6295400770" style="background-color:   rgb(89, 0, 89);  border:none; margin-bottom: 17px; margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 30px; width:80%">
+                        <input placeholder="sohan100karfa@gmail.com" style="background-color:   rgb(89, 0, 89);  border:none; margin-bottom: 17px;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 30px; width:80%">
+                        <input placeholder="linkedin/sohankarfa" style="background-color:   rgb(89, 0, 89);  border:none;  margin-bottom: 17px;  margin-right: 3px; text-align: start; color:  rgb(233, 239, 240); font-weight: 100; margin-left: 30px;  width:80%">
+                        <input placeholder="Tarakeswar, West Bengal" style="background-color:   rgb(89, 0, 89);  border:none;  margin-bottom: 17px;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 30px;  width:80%">
+                        <input placeholder="Sohan-2001" style="background-color:   rgb(89, 0, 89);  border:none;  margin-right: 3px; text-align: start; color: rgb(233, 239, 240); font-weight: 100; margin-left: 30px;  width:80%">
+                    
                     </div>
-                  </div>
-            <div id="below">
-                <div class="containerBody">
-                    <div class="partBody">
+                </div>
+            </div>
+            <div id="Body">
+                <div id="containerBody">
+                    <div id="BodyPart1">
                         <textarea placeholder="Highly passionate and versatile software developer with a strong foundation in designing and building responsive and user-friendly Windows and Android apps." style="height: 100px;"></textarea>
                         <hr class="divider">
                         <h2 class="inputLeft">Skills</h2>
@@ -77,13 +57,11 @@
                         <h2 class="inputLeft">Extra-Curricular Activities</h2>
                         <textarea placeholder="Tree Plantation | Tarakeswar Green Mates NGO | July'22
                         " style="height: 100px;"></textarea>
-                        
                     </div>
-                    <div class="partBody1">
+                    <div id="BodyPart2">
                         <hr class="divider1">
                     </div>
-
-                    <div class="partBody2">
+                    <div id="BodyPart3">
                         <h2 class="inputLeft">Projects</h2>
                         <textarea placeholder="
 Bus Timer | Android Application | May'24
@@ -128,10 +106,12 @@ Tarakeswar High School, Tarakeswar, India
 Bikash Bharati Blooms Day School, Tarakeswar, India
                         " style="height: 150px;"></textarea>
                     </div>
-                  </div>
-            </div>              
+                </div>
             </div>
+
+        </div>
+        <div id="bottom">
+
         </div>
     </body>
-    <script src="index.js"></script>
 </html>
